@@ -3,7 +3,7 @@ lines = f.readlines()
 
 for line in lines:
     line = line.strip()
-    for i in range(14, len(line)):
-        if len(set(list(line[i-14:i]))) == 14:
+    for i in range(3, len(line)):
+        if len({line[i - 3], line[i - 2], line[i - 1], line[i]}) == 4:
             break
-    print(i)
+    print(i + 1)
