@@ -1,6 +1,5 @@
 import os
 import re
-import numpy as np
 
 def read_file(filename):
     directory_path = os.path.dirname(os.path.abspath(__file__))
